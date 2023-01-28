@@ -3,19 +3,25 @@
 @tailwind utilities;
 
 @layer base {
-    h1 {
-        @apply text-5xl
+    header {
+        @apply transition-all duration-300
+    }
+    #nav ul li {
+        @apply my-4
+    }
+    #nav ul li a:hover {
+        border-bottom: 1px solid gray;
     }
 }
 
 @layer components {
-    .grid-card {
+    /* .grid-card {
         @apply h-60 bg-blue-500 aspect-[4/3] md:aspect-[3/4] xl:aspect-[4/3] rounded-lg overflow-hidden;
-    }
+    } */
 }
 
 @layer utilities {
-    #toggle:checked~label div .toggle-circle {
+    /* #toggle:checked~label div .toggle-circle {
         transform: translateX(15px);
-    }
+    } */
 }
