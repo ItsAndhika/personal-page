@@ -4,13 +4,12 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      animation: {
-        'spin-slow': 'spin 3s linear infinite'
-      },
       fontFamily: {
         inter: ["Inter"],
         viraCode: ["Vira Code"],
-        Hack: ["Hack"]
+        hack: ["Hack"],
+        openSans: ["Open Sans"],
+        montserrat: ["Montserrat"]
       }
     },
   },
