@@ -11,10 +11,12 @@
 	</head>
 	<body class="font-inter dark:bg-slate-800 dark:text-slate-300">
 		<header
-			class="flex justify-between items-center fixed top-0 left-0 right-0 w-100% p-5 opacity-90 dark:bg-slate-700"
+			class="flex justify-between items-center absolute top-0 left-0 right-0 w-full p-5 opacity-90 dark:bg-slate-700 lg:h-[13vh]"
 			id="header"
 		>
-			<a href="#home" class="font-bold font-montserrat text-base text-slate-100"
+			<a
+				href="#home"
+				class="font-bold font-montserrat text-base text-slate-100 lg:text-xl"
 				>Primananda Andhika</a
 			>
 			<svg
@@ -23,17 +25,17 @@
 				fill="white"
 				height="25"
 				id="menu"
-				class="cursor-pointer"
+				class="cursor-pointer lg:hidden"
 			>
 				<rect width="100" height="10"></rect>
 				<rect y="30" width="100" height="10"></rect>
 				<rect y="60" width="100" height="10"></rect>
 			</svg>
 			<nav
-				class="hidden absolute right-14 top-11 bg-slate-300 text-slate-900 px-16 py-8 bg-opacity-80"
+				class="hidden absolute right-14 top-11 bg-slate-300 text-slate-900 px-16 py-8 bg-opacity-80 lg:block lg:bg-transparent lg:static lg:text-slate-200 lg:p-0 lg:m-0 lg:nav-lg"
 				id="nav"
 			>
-				<ul>
+				<ul class="lg:flex lg:flex-row lg:justify-evenly lg:items-center">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#skills">Skills</a></li>
@@ -42,276 +44,555 @@
 				</ul>
 			</nav>
 		</header>
-		<hr />
-		<main
-			class="flex justify-center items-center flex-col mt-28 lg:h-[34vh]"
-			id="home"
-		>
-			<img
-				src="img/programmer.avif"
-				alt="Programmer"
-				class="w-1/2 text-center rounded-full"
-			/>
-			<nav class="w-40 flex justify-center items-center">
-				<a href="facebook.com" class="mx-2 inline w-6 mt-3 col"
-					><svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="white"
-						class="inline"
-						viewBox="0 0 512 512"
-					>
-						<!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-						<path
-							d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-						/>
-					</svg>
-				</a>
-				<a href="discord.com" class="mx-2 inline w-6 mt-3"
-					><svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="inline"
-						fill="white"
-						viewBox="0 0 640 512"
-					>
-						<!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-						<path
-							d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
-						/>
-					</svg>
-				</a>
-				<a href="github.com" class="mx-2 inline w-6 mt-3"
-					><svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="white"
-						class="inline"
-						viewBox="0 0 496 512"
-					>
-						<!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-						<path
-							d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-						/>
-					</svg>
-				</a>
-			</nav>
-			<h1 class="text-3xl font-bold mt-3">Primananda Andhika</h1>
-			<h3 class="text-2xl font-semibold my-3">Web Developer | Student</h3>
-			<p class="w-1/2 mb-3 text-base text-center font-montserrat">
-				A Junior Web Developer who Wants to be a Better Person Everyday with
-				Learn Anything that I Like to do
-			</p>
-			<p
-				class="w-1/2 text-center text-sm italic underline capitalize font-semibold font-openSans"
+		<main class="container">
+			<section
+				class="flex justify-center items-center flex-col mt-28 lg:mt-32"
+				id="home"
 			>
-				the most important thing to learn anything is intention!
-			</p>
-		</main>
-		<section class="mt-36 text-center" id="about">
-			<h1 class="text-3xl font-bold">About Me</h1>
-			<div
-				class="flex items-center flex-col font-montserrat lg:grid lg:grid-cols-2"
-			>
-				<p class="w-1/2 my-5">
-					Hi, my name is Primananda Andhika, i am from Central Java, Indonesia.
-					Currently i live in Purworejo with my family. I've learned programming
-					since i was at class 8 Junior High School.
-				</p>
-				<p class="w-1/2 mb-5">
-					First programming language that i learned is JavaScript and i like
-					that language so much. I'm also learning foreign languages like
-					English, Spanish, French, Chinese but i'm still not fluent with those
-					languages yet
-				</p>
-			</div>
-		</section>
-		<section
-			class="text-center mt-36 flex flex-col justify-center items-center"
-			id="skills"
-		>
-			<h1 class="font-bold text-3xl">My Programming Skills</h1>
-			<h2 class="mt-5 font-semibold text-2xl font-openSans">
-				Front End Skills
-			</h2>
-			<div
-				class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-700 p-10 px-16 py-8 w-1/2 rounded-lg shadow-lg"
-				id="html"
-			>
-				<svg
-					viewBox="-52.5 0 361 361"
-					xmlns="http://www.w3.org/2000/svg"
-					preserveAspectRatio="xMinYMin meet"
-					fill="#000000"
-					class="w-10"
-				>
-					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-					<g
-						id="SVGRepo_tracerCarrier"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					></g>
-					<g id="SVGRepo_iconCarrier">
-						<path
-							d="M255.555 70.766l-23.241 260.36-104.47 28.962-104.182-28.922L.445 70.766h255.11z"
-							fill="#E44D26"
-						></path>
-						<path
-							d="M128 337.95l84.417-23.403 19.86-222.49H128V337.95z"
-							fill="#F16529"
-						></path>
-						<path
-							d="M82.82 155.932H128v-31.937H47.917l.764 8.568 7.85 88.01H128v-31.937H85.739l-2.919-32.704zM90.018 236.542h-32.06l4.474 50.146 65.421 18.16.147-.04V271.58l-.14.037-35.568-9.604-2.274-25.471z"
-							fill="#EBEBEB"
-						></path>
-						<path
-							d="M24.18 0h16.23v16.035h14.847V0h16.231v48.558h-16.23v-16.26H40.411v16.26h-16.23V0zM92.83 16.103H78.544V0h44.814v16.103h-14.295v32.455h-16.23V16.103h-.001zM130.47 0h16.923l10.41 17.062L168.203 0h16.93v48.558h-16.164V24.49l-11.166 17.265h-.28L146.35 24.49v24.068h-15.88V0zM193.21 0h16.235v32.508h22.824v16.05h-39.06V0z"
-						></path>
-						<path
-							d="M127.89 220.573h39.327l-3.708 41.42-35.62 9.614v33.226l65.473-18.145.48-5.396 7.506-84.08.779-8.576H127.89v31.937zM127.89 155.854v.078h77.143l.64-7.178 1.456-16.191.763-8.568H127.89v31.86z"
-							fill="#FFF"
-						></path>
-					</g>
-				</svg>
-				<div id="content">
-					<h3 class="font-semibold font-openSans text-xl">HTML</h3>
-					<p class="font-montserrat text-sm">Advance</p>
-				</div>
-			</div>
-			<div
-				class="flex justify-between items-center content-center mb-8 text-center bg-slate-700 p-10 px-16 py-8 w-1/2 rounded-lg shadow-lg"
-				id="css"
-			>
-				<svg
-					viewBox="0 0 32 32"
-					class="w-10"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-					<g
-						id="SVGRepo_tracerCarrier"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					></g>
-					<g id="SVGRepo_iconCarrier">
-						<path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path>
-						<path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path>
-						<path
-							d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z"
+				<img
+					src="img/programmer.avif"
+					alt="Programmer"
+					class="w-1/2 text-center rounded-full lg:w-1/4"
+				/>
+				<nav class="w-40 flex justify-center items-center">
+					<a
+						href="https://m.facebook.com/100056986006962"
+						class="mx-2 inline w-6 mt-3 col"
+						><svg
+							xmlns="http://www.w3.org/2000/svg"
 							fill="white"
-						></path>
-					</g>
-				</svg>
-				<div id="content">
-					<h3 class="font-semibold font-openSans text-xl">CSS</h3>
-					<p class="font-montserrat text-sm">Advance</p>
-				</div>
-			</div>
-			<div
-				class="flex justify-between items-center mb-8 bg-slate-700 p-10 px-16 py-8 w-1/2 rounded-lg shadow-lg"
-				id="javascript"
-			>
-				<svg
-					viewBox="0 0 256 256"
-					version="1.1"
-					xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink"
-					preserveAspectRatio="xMidYMid"
-					class="w-10"
-					fill="#000000"
+							class="inline"
+							viewBox="0 0 512 512"
+						>
+							<!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+							<path
+								d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+							/>
+						</svg>
+					</a>
+					<a
+						href="https://discord.com/users/832254421835448370"
+						class="mx-2 inline w-6 mt-3"
+						><svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="inline"
+							fill="white"
+							viewBox="0 0 640 512"
+						>
+							<!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+							<path
+								d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
+							/>
+						</svg>
+					</a>
+					<a href="https://github.com/ItsAndhika" class="mx-2 inline w-6 mt-3"
+						><svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="white"
+							class="inline"
+							viewBox="0 0 496 512"
+						>
+							<!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+							<path
+								d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+							/>
+						</svg>
+					</a>
+				</nav>
+				<h1 class="text-3xl font-bold mt-3 lg:text-5xl">Primananda Andhika</h1>
+				<h3 class="text-2xl font-semibold my-3 lg:text-4xl">
+					Web Developer | Student
+				</h3>
+				<p class="w-1/2 mb-3 text-base text-center font-montserrat lg:text-xl">
+					A Junior Web Developer who Wants to be a Better Person Everyday with
+					Learn Anything that I Like to do
+				</p>
+				<p
+					class="w-1/2 text-center text-sm italic underline capitalize font-semibold font-openSans lg:text-lg"
 				>
-					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-					<g
-						id="SVGRepo_tracerCarrier"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					></g>
-					<g id="SVGRepo_iconCarrier">
-						<g>
-							<path
-								d="M0,0 L256,0 L256,256 L0,256 L0,0 Z"
-								fill="#F7DF1E"
-							></path>
-							<path
-								d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026"
-								fill="#000000"
-							></path>
-							<path
-								d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413"
-								fill="#000000"
-							></path>
-						</g>
-					</g>
-				</svg>
-				<div id="content" class="w-1/2 ml-5">
-					<h3 class="font-semibold font-openSans text-lg">JavaScript</h3>
-					<p class="font-montserrat text-sm">Intermediate</p>
-				</div>
-			</div>
-			<div
-				class="flex justify-between items-center mb-8 bg-slate-700 p-10 px-16 py-8 w-1/2 rounded-lg shadow-lg text-center"
-				id="bootstrap"
-			>
-				<svg
-					viewBox="0 0 256 256"
-					version="1.1"
-					xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink"
-					preserveAspectRatio="xMidYMid"
-					class="w-10"
-					fill="#000000"
+					the most important thing to learn anything is intention!
+				</p>
+			</section>
+			<section class="mt-36 text-center" id="about">
+				<h1 class="text-3xl font-bold lg:text-5xl">About Me</h1>
+				<div
+					class="flex items-center flex-col font-montserrat lg:flex-row lg:w-3/4 lg:mx-auto lg:justify-around"
 				>
-					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-					<g
-						id="SVGRepo_tracerCarrier"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					></g>
-					<g id="SVGRepo_iconCarrier">
-						<g>
-							<path
-								d="M0,222.991225 C0,241.223474 14.7785318,256 33.0087747,256 L222.991225,256 C241.223474,256 256,241.221468 256,222.991225 L256,33.0087747 C256,14.7765263 241.221468,0 222.991225,0 L33.0087747,0 C14.7765263,0 0,14.7785318 0,33.0087747 L0,222.991225 Z"
-								fill="#563D7C"
-							></path>
-							<path
-								d="M106.157563,113.238095 L106.157563,76.9845938 L138.069328,76.9845938 C141.108559,76.9845938 144.039202,77.2378593 146.861345,77.7443978 C149.683488,78.2509362 152.179961,79.1554557 154.35084,80.4579832 C156.52172,81.7605107 158.258397,83.5695496 159.560924,85.8851541 C160.863452,88.2007585 161.514706,91.1675823 161.514706,94.7857143 C161.514706,101.298352 159.560944,106.001853 155.653361,108.896359 C151.745779,111.790864 146.752832,113.238095 140.67437,113.238095 L106.157563,113.238095 L106.157563,113.238095 Z M72.07493,50.5 L72.07493,205.5 L147.186975,205.5 C154.133788,205.5 160.899594,204.631661 167.484594,202.894958 C174.069594,201.158255 179.93088,198.480877 185.068627,194.862745 C190.206375,191.244613 194.294803,186.577293 197.334034,180.860644 C200.373264,175.143996 201.892857,168.37819 201.892857,160.563025 C201.892857,150.866431 199.541107,142.581033 194.837535,135.706583 C190.133963,128.832132 183.00635,124.020088 173.454482,121.270308 C180.401295,117.941627 185.647508,113.672295 189.193277,108.462185 C192.739047,103.252075 194.511905,96.7395349 194.511905,88.9243697 C194.511905,81.6881057 193.317939,75.6097352 190.929972,70.6890756 C188.542005,65.7684161 185.177193,61.8247114 180.835434,58.8578431 C176.493676,55.8909749 171.283644,53.756309 165.205182,52.4537815 C159.12672,51.151254 152.397096,50.5 145.016106,50.5 L72.07493,50.5 L72.07493,50.5 Z M106.157563,179.015406 L106.157563,136.466387 L143.279412,136.466387 C150.660401,136.466387 156.594049,138.166883 161.080532,141.567927 C165.567016,144.968971 167.810224,150.649353 167.810224,158.609244 C167.810224,162.661552 167.122789,165.990183 165.747899,168.595238 C164.373009,171.200293 162.527789,173.262597 160.212185,174.782213 C157.89658,176.301828 155.219203,177.387252 152.179972,178.038515 C149.140741,178.689779 145.956833,179.015406 142.628151,179.015406 L106.157563,179.015406 L106.157563,179.015406 Z"
-								fill="#FFFFFF"
-							></path>
-						</g>
-					</g>
-				</svg>
-				<div id="content" class="w-1/2 ml-5">
-					<h3 class="font-semibold font-openSans text-lg">Bootstrap</h3>
-					<p class="font-montserrat text-sm">Intermediate</p>
+					<p class="w-3/6 my-5 lg:mr-10 lg:mt-10 lg:text-xl">
+						Hi, my name is Primananda Andhika, i am from Central Java,
+						Indonesia. Currently i live in Purworejo with my family. I've
+						learned programming since i was at class 8 Junior High School.
+					</p>
+					<p class="w-3/6 mb-5 lg:mt-10 lg:text-xl">
+						First programming language that i learned is JavaScript and i like
+						that language so much. I'm also learning foreign languages like
+						English, Spanish, French, Chinese but i'm still not fluent with
+						those languages yet
+					</p>
 				</div>
-			</div>
-			<div
-				class="flex justify-between items-center mb-8 bg-slate-700 p-10 px-16 py-8 w-1/2 rounded-lg shadow-lg text-center"
-				id="tailwind"
+			</section>
+			<section
+				class="text-center mt-36 flex flex-col justify-center items-center content-center"
+				id="skills"
 			>
-				<svg
-					viewBox="0 0 32 32"
-					xmlns="http://www.w3.org/2000/svg"
-					fill="#000000"
+				<h1 class="font-bold text-3xl lg:text-5xl lg:mb-10">
+					My Programming Skills
+				</h1>
+				<div
+					class="w-full mx-auto flex flex-col justify-center items-center lg:grid lg:grid-cols-3 lg:grid-rows-3 lg:mx-auto lg:text-center lg:w-full lg:ml-[60px] lg:overflow-hidden"
+					id="cards"
 				>
-					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-					<g
-						id="SVGRepo_tracerCarrier"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					></g>
-					<g id="SVGRepo_iconCarrier">
-						<title>file_type_tailwind</title>
-						<path
-							d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"
-							style="fill: #44a8b3"
-						></path>
-					</g>
-				</svg>
-				<div id="content" class="w-1/2 ml-5">
-					<h3 class="font-semibold font-openSans text-lg">Tailwind</h3>
-					<p class="font-montserrat text-sm">Intermediate</p>
+					<div
+						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-700 p-10 px-16 py-8 w-1/2 rounded-lg shadow-lg lg:w-3/4"
+						id="html"
+					>
+						<svg
+							viewBox="-52.5 0 361 361"
+							xmlns="http://www.w3.org/2000/svg"
+							preserveAspectRatio="xMinYMin meet"
+							fill="#000000"
+							class="w-10 lg:w-14"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<path
+									d="M255.555 70.766l-23.241 260.36-104.47 28.962-104.182-28.922L.445 70.766h255.11z"
+									fill="#E44D26"
+								></path>
+								<path
+									d="M128 337.95l84.417-23.403 19.86-222.49H128V337.95z"
+									fill="#F16529"
+								></path>
+								<path
+									d="M82.82 155.932H128v-31.937H47.917l.764 8.568 7.85 88.01H128v-31.937H85.739l-2.919-32.704zM90.018 236.542h-32.06l4.474 50.146 65.421 18.16.147-.04V271.58l-.14.037-35.568-9.604-2.274-25.471z"
+									fill="#EBEBEB"
+								></path>
+								<path
+									d="M24.18 0h16.23v16.035h14.847V0h16.231v48.558h-16.23v-16.26H40.411v16.26h-16.23V0zM92.83 16.103H78.544V0h44.814v16.103h-14.295v32.455h-16.23V16.103h-.001zM130.47 0h16.923l10.41 17.062L168.203 0h16.93v48.558h-16.164V24.49l-11.166 17.265h-.28L146.35 24.49v24.068h-15.88V0zM193.21 0h16.235v32.508h22.824v16.05h-39.06V0z"
+								></path>
+								<path
+									d="M127.89 220.573h39.327l-3.708 41.42-35.62 9.614v33.226l65.473-18.145.48-5.396 7.506-84.08.779-8.576H127.89v31.937zM127.89 155.854v.078h77.143l.64-7.178 1.456-16.191.763-8.568H127.89v31.86z"
+									fill="#FFF"
+								></path>
+							</g>
+						</svg>
+						<div id="content">
+							<h3 class="font-semibold font-openSans text-xl">HTML</h3>
+							<p class="font-montserrat text-sm">Advance</p>
+						</div>
+					</div>
+					<div
+						class="flex justify-between items-center content-center mb-8 text-center bg-slate-700 p-10 px-16 py-8 w-1/2 rounded-lg shadow-lg lg:w-3/4"
+						id="css"
+					>
+						<svg
+							viewBox="0 0 32 32"
+							class="w-10 lg:w-14"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path>
+								<path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path>
+								<path
+									d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z"
+									fill="white"
+								></path>
+							</g>
+						</svg>
+						<div id="content">
+							<h3 class="font-semibold font-openSans text-xl">CSS</h3>
+							<p class="font-montserrat text-sm">Advance</p>
+						</div>
+					</div>
+					<div
+						class="flex justify-between items-center mb-8 bg-slate-700 p-10 px-16 py-8 w-1/2 rounded-lg shadow-lg lg:w-3/4"
+						id="javascript"
+					>
+						<svg
+							viewBox="0 0 256 256"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							preserveAspectRatio="xMidYMid"
+							class="w-10 lg:w-14"
+							fill="#000000"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<g>
+									<path
+										d="M0,0 L256,0 L256,256 L0,256 L0,0 Z"
+										fill="#F7DF1E"
+									></path>
+									<path
+										d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026"
+										fill="#000000"
+									></path>
+									<path
+										d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413"
+										fill="#000000"
+									></path>
+								</g>
+							</g>
+						</svg>
+						<div id="content" class="w-1/2 ml-5">
+							<h3 class="font-semibold font-openSans text-lg">JavaScript</h3>
+							<p class="font-montserrat text-sm">Intermediate</p>
+						</div>
+					</div>
+					<div
+						class="flex justify-between items-center mb-8 bg-slate-700 p-10 px-16 py-8 w-1/2 rounded-lg shadow-lg lg:w-3/4 text-center"
+						id="bootstrap"
+					>
+						<svg
+							viewBox="0 0 256 256"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							preserveAspectRatio="xMidYMid"
+							class="w-10 lg:w-14"
+							fill="#000000"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<g>
+									<path
+										d="M0,222.991225 C0,241.223474 14.7785318,256 33.0087747,256 L222.991225,256 C241.223474,256 256,241.221468 256,222.991225 L256,33.0087747 C256,14.7765263 241.221468,0 222.991225,0 L33.0087747,0 C14.7765263,0 0,14.7785318 0,33.0087747 L0,222.991225 Z"
+										fill="#563D7C"
+									></path>
+									<path
+										d="M106.157563,113.238095 L106.157563,76.9845938 L138.069328,76.9845938 C141.108559,76.9845938 144.039202,77.2378593 146.861345,77.7443978 C149.683488,78.2509362 152.179961,79.1554557 154.35084,80.4579832 C156.52172,81.7605107 158.258397,83.5695496 159.560924,85.8851541 C160.863452,88.2007585 161.514706,91.1675823 161.514706,94.7857143 C161.514706,101.298352 159.560944,106.001853 155.653361,108.896359 C151.745779,111.790864 146.752832,113.238095 140.67437,113.238095 L106.157563,113.238095 L106.157563,113.238095 Z M72.07493,50.5 L72.07493,205.5 L147.186975,205.5 C154.133788,205.5 160.899594,204.631661 167.484594,202.894958 C174.069594,201.158255 179.93088,198.480877 185.068627,194.862745 C190.206375,191.244613 194.294803,186.577293 197.334034,180.860644 C200.373264,175.143996 201.892857,168.37819 201.892857,160.563025 C201.892857,150.866431 199.541107,142.581033 194.837535,135.706583 C190.133963,128.832132 183.00635,124.020088 173.454482,121.270308 C180.401295,117.941627 185.647508,113.672295 189.193277,108.462185 C192.739047,103.252075 194.511905,96.7395349 194.511905,88.9243697 C194.511905,81.6881057 193.317939,75.6097352 190.929972,70.6890756 C188.542005,65.7684161 185.177193,61.8247114 180.835434,58.8578431 C176.493676,55.8909749 171.283644,53.756309 165.205182,52.4537815 C159.12672,51.151254 152.397096,50.5 145.016106,50.5 L72.07493,50.5 L72.07493,50.5 Z M106.157563,179.015406 L106.157563,136.466387 L143.279412,136.466387 C150.660401,136.466387 156.594049,138.166883 161.080532,141.567927 C165.567016,144.968971 167.810224,150.649353 167.810224,158.609244 C167.810224,162.661552 167.122789,165.990183 165.747899,168.595238 C164.373009,171.200293 162.527789,173.262597 160.212185,174.782213 C157.89658,176.301828 155.219203,177.387252 152.179972,178.038515 C149.140741,178.689779 145.956833,179.015406 142.628151,179.015406 L106.157563,179.015406 L106.157563,179.015406 Z"
+										fill="#FFFFFF"
+									></path>
+								</g>
+							</g>
+						</svg>
+						<div id="content" class="w-1/2 ml-5">
+							<h3 class="font-semibold font-openSans text-lg">Bootstrap</h3>
+							<p class="font-montserrat text-sm">Intermediate</p>
+						</div>
+					</div>
+					<div
+						class="flex justify-between items-center mb-8 bg-slate-700 p-10 px-16 py-8 w-1/2 rounded-lg shadow-lg lg:w-3/4 text-center"
+						id="tailwind"
+					>
+						<svg
+							viewBox="0 0 32 32"
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-10 lg:w-14"
+							fill="#000000"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<title>file_type_tailwind</title>
+								<path
+									d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"
+									style="fill: #44a8b3"
+								></path>
+							</g>
+						</svg>
+						<div id="content" class="w-1/2 ml-5">
+							<h3 class="font-semibold font-openSans text-lg">Tailwind</h3>
+							<p class="font-montserrat text-sm">Intermediate</p>
+						</div>
+					</div>
+					<div
+						class="flex justify-between items-center mb-8 bg-slate-700 p-10 px-16 py-8 w-1/2 rounded-lg shadow-lg lg:w-3/4 text-center"
+						id="reactjs"
+					>
+						<svg
+							viewBox="0 0 64 64"
+							version="1.1"
+							class="w-10 lg:w-14"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							xml:space="preserve"
+							xmlns:serif="http://www.serif.com/"
+							style="
+								fill-rule: evenodd;
+								clip-rule: evenodd;
+								stroke-linejoin: round;
+								stroke-miterlimit: 2;
+							"
+							fill="#000000"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<rect
+									id="Icons"
+									x="-1088"
+									y="-64"
+									width="1280"
+									height="800"
+									style="fill: none"
+								></rect>
+								<g id="Icons1" serif:id="Icons">
+									<g id="Strike"></g>
+									<g id="H1"></g>
+									<g id="H2"></g>
+									<g id="H3"></g>
+									<g id="list-ul"></g>
+									<g id="hamburger-1"></g>
+									<g id="hamburger-2"></g>
+									<g id="list-ol"></g>
+									<g id="list-task"></g>
+									<g id="trash"></g>
+									<g id="vertical-menu"></g>
+									<g id="horizontal-menu"></g>
+									<g id="sidebar-2"></g>
+									<g id="Pen"></g>
+									<g id="Pen1" serif:id="Pen"></g>
+									<g id="clock"></g>
+									<g id="external-link"></g>
+									<g id="hr"></g>
+									<g id="info"></g>
+									<g id="warning"></g>
+									<g id="plus-circle"></g>
+									<g id="minus-circle"></g>
+									<g id="vue"></g>
+									<g id="cog"></g>
+									<g id="logo"></g>
+									<g id="radio-check"></g>
+									<g id="eye-slash"></g>
+									<g id="eye"></g>
+									<g id="toggle-off"></g>
+									<g id="shredder"></g>
+									<g
+										id="spinner--loading--dots-"
+										serif:id="spinner [loading, dots]"
+									></g>
+									<g id="react">
+										<circle
+											cx="32.001"
+											cy="31.955"
+											r="4.478"
+											style="fill: #00d8ff"
+										></circle>
+										<path
+											d="M32.33,22.516c7.635,0.052 15.965,0.609 21.683,5.708c0.168,0.15 0.33,0.306 0.488,0.467c1.349,1.375 2.054,3.595 0.965,5.422c-2.234,3.751 -7.23,5.387 -12.067,6.394c-7.234,1.506 -14.798,1.518 -22.029,0.192c-4.161,-0.764 -8.416,-2.103 -11.373,-4.904c-1.151,-1.09 -2.135,-2.524 -1.981,-4.12c0.25,-2.582 2.727,-4.239 4.812,-5.361c5.791,-3.116 12.847,-3.813 19.502,-3.798Zm-0.554,1.173c-7.224,0.049 -15.043,0.51 -20.621,5.129c-0.195,0.161 -0.383,0.33 -0.564,0.507c-0.117,0.114 -0.23,0.233 -0.339,0.355c-0.979,1.1 -1.316,2.867 -0.392,4.188c0.93,1.329 2.342,2.288 3.796,3.07c5.438,2.924 11.864,3.443 18.129,3.465c6.343,0.023 12.884,-0.555 18.487,-3.452c2.232,-1.155 4.744,-2.851 4.655,-5.035c-0.082,-2.004 -2.036,-3.242 -3.499,-4.126c-0.396,-0.239 -0.803,-0.46 -1.216,-0.668c-5.562,-2.787 -12.08,-3.447 -18.436,-3.433Z"
+											style="fill: #00d8ff"
+										></path>
+										<path
+											d="M42.115,10.703c2.793,0.071 4.24,3.429 4.431,5.909c0.038,0.493 0.052,0.988 0.046,1.483c-0.006,0.536 -0.035,1.072 -0.082,1.606c-0.589,6.612 -3.608,12.909 -7.163,18.724c-3.477,5.688 -7.717,11.36 -13.485,13.996c-1.907,0.872 -4.175,1.41 -5.863,0.437c-2.314,-1.333 -2.567,-4.451 -2.524,-6.816c0.011,-0.581 0.049,-1.162 0.109,-1.741c0.889,-8.56 5.228,-16.669 10.658,-23.655c3.168,-4.076 6.937,-8.119 11.632,-9.583c0.739,-0.231 1.326,-0.371 2.241,-0.36Zm-0.134,1.172c-3.279,0.052 -6.223,2.482 -8.83,5.007c-6.854,6.637 -11.905,15.464 -13.937,24.721c-0.157,0.717 -0.289,1.439 -0.386,2.166c-0.075,0.563 -0.13,1.129 -0.159,1.697c-0.023,0.452 -0.031,0.905 -0.017,1.358c0.01,0.354 0.033,0.708 0.072,1.06c0.029,0.269 0.068,0.537 0.117,0.803c0.037,0.197 0.08,0.393 0.13,0.588c0.041,0.158 0.087,0.315 0.139,0.471c0.409,1.233 1.463,2.411 2.878,2.45c3.301,0.09 6.409,-2.317 9.096,-4.933c4.717,-4.591 8.232,-10.36 10.978,-16.424c2.216,-4.896 4.243,-10.218 3.111,-15.607c-0.043,-0.204 -0.093,-0.406 -0.15,-0.606c-0.047,-0.163 -0.1,-0.324 -0.158,-0.483c-0.44,-1.199 -1.475,-2.271 -2.884,-2.268Z"
+											style="fill: #00d8ff"
+										></path>
+										<path
+											d="M22.109,10.747c3.564,0.069 6.765,2.488 9.607,5.197c5.186,4.943 9.011,11.231 11.913,17.849c2.248,5.127 4.316,10.882 2.478,16.292c-0.579,1.705 -2.044,3.265 -3.997,3.305c-3.581,0.072 -6.9,-2.532 -9.78,-5.335c-7.225,-7.034 -12.589,-16.32 -14.427,-26.168c-0.132,-0.704 -0.237,-1.414 -0.309,-2.127c-0.059,-0.582 -0.096,-1.167 -0.106,-1.752c-0.008,-0.472 0.002,-0.944 0.035,-1.414c0.022,-0.314 0.054,-0.626 0.097,-0.937c0.041,-0.292 0.093,-0.583 0.158,-0.871c0.043,-0.191 0.091,-0.38 0.146,-0.568c0.539,-1.843 1.941,-3.485 4.185,-3.471Zm-0.135,1.173c-2.087,0.046 -3.042,2.507 -3.234,4.234c-0.039,0.354 -0.063,0.711 -0.074,1.068c-0.014,0.456 -0.008,0.913 0.015,1.369c0.328,6.599 3.278,12.979 6.838,18.821c3.352,5.5 7.4,10.978 12.968,13.794c1.608,0.813 3.562,1.452 4.951,0.684c1.742,-0.964 1.956,-3.261 2.049,-4.973c0.025,-0.466 0.028,-0.934 0.013,-1.401c-0.018,-0.586 -0.064,-1.171 -0.133,-1.753c-0.642,-5.437 -3.05,-10.582 -5.816,-15.444c-3.442,-6.048 -7.659,-12.076 -13.627,-15.225c-1.236,-0.652 -2.574,-1.185 -3.95,-1.174Z"
+											style="fill: #00d8ff"
+										></path>
+									</g>
+									<g id="check-selected"></g>
+									<g id="turn-off"></g>
+									<g id="code-block"></g>
+									<g id="user"></g>
+									<g id="coffee-bean"></g>
+									<g id="coffee-beans">
+										<g id="coffee-bean1" serif:id="coffee-bean"></g>
+									</g>
+									<g id="coffee-bean-filled"></g>
+									<g id="coffee-beans-filled">
+										<g id="coffee-bean2" serif:id="coffee-bean"></g>
+									</g>
+									<g id="clipboard"></g>
+									<g id="clipboard-paste"></g>
+									<g id="clipboard-copy"></g>
+									<g id="Layer1"></g>
+								</g>
+							</g>
+						</svg>
+						<div id="content" class="ml-2">
+							<h3 class="font-semibold font-openSans text-lg">React.js</h3>
+							<p class="font-montserrat text-sm">Beginner</p>
+						</div>
+					</div>
+					<div
+						class="flex justify-between items-center mb-8 bg-slate-700 p-10 px-16 py-8 w-1/2 rounded-lg shadow-lg lg:w-3/4 text-center"
+						id="nodejs"
+					>
+						<svg
+							viewBox="-16.5 0 289 289"
+							version="1.1"
+							class="w-10 lg:w-14"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							preserveAspectRatio="xMidYMid"
+							fill="#000000"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<g>
+									<path
+										d="M127.999999,288.463771 C124.024844,288.463771 120.314699,287.403728 116.869564,285.548656 L81.6231884,264.612838 C76.32298,261.697724 78.9730854,260.637682 80.5631458,260.107661 C87.7184259,257.72257 89.0434775,257.192547 96.4637688,252.952381 C97.2587979,252.422361 98.3188405,252.687372 99.1138718,253.217392 L126.144927,269.383024 C127.20497,269.913045 128.530021,269.913045 129.325053,269.383024 L235.064182,208.165634 C236.124225,207.635611 236.654245,206.575571 236.654245,205.250519 L236.654245,83.0807467 C236.654245,81.7556929 236.124225,80.6956526 235.064182,80.1656324 L129.325053,19.2132506 C128.26501,18.6832305 126.939959,18.6832305 126.144927,19.2132506 L20.4057954,80.1656324 C19.3457551,80.6956526 18.8157349,82.0207041 18.8157349,83.0807467 L18.8157349,205.250519 C18.8157349,206.31056 19.3457551,207.635611 20.4057954,208.165634 L49.2919247,224.861286 C64.9275364,232.811595 74.7329196,223.536234 74.7329196,214.260871 L74.7329196,93.681159 C74.7329196,92.0910985 76.0579711,90.5010358 77.9130428,90.5010358 L91.4285716,90.5010358 C93.0186343,90.5010358 94.6086948,91.8260873 94.6086948,93.681159 L94.6086948,214.260871 C94.6086948,235.196689 83.2132512,247.387164 63.3374737,247.387164 C57.2422362,247.387164 52.4720502,247.387164 38.9565214,240.761906 L11.1304347,224.861286 C4.24016581,220.886129 5.68434189e-14,213.46584 5.68434189e-14,205.515528 L5.68434189e-14,83.3457557 C5.68434189e-14,75.3954465 4.24016581,67.9751552 11.1304347,64.0000006 L116.869564,2.78260752 C123.494824,-0.927535841 132.505176,-0.927535841 139.130436,2.78260752 L244.869565,64.0000006 C251.759834,67.9751552 256,75.3954465 256,83.3457557 L256,205.515528 C256,213.46584 251.759834,220.886129 244.869565,224.861286 L139.130436,286.078676 C135.685299,287.668739 131.710145,288.463771 127.999999,288.463771 L127.999999,288.463771 Z M160.596274,204.455488 C114.219461,204.455488 104.679089,183.254659 104.679089,165.233955 C104.679089,163.643893 106.004141,162.053832 107.859212,162.053832 L121.639752,162.053832 C123.229813,162.053832 124.554864,163.113872 124.554864,164.703935 C126.674947,178.749484 132.770187,185.639753 160.861283,185.639753 C183.122154,185.639753 192.662526,180.604556 192.662526,168.67909 C192.662526,161.788821 190.012423,156.753624 155.296065,153.308489 C126.409938,150.393375 108.389235,144.033126 108.389235,120.977226 C108.389235,99.5113875 126.409938,86.7908901 156.621119,86.7908901 C190.542443,86.7908901 207.238095,98.4513472 209.358178,123.89234 C209.358178,124.687371 209.093167,125.482403 208.563147,126.277434 C208.033127,126.807454 207.238095,127.337474 206.443064,127.337474 L192.662526,127.337474 C191.337475,127.337474 190.012423,126.277434 189.747412,124.952382 C186.567289,110.376813 178.351966,105.606625 156.621119,105.606625 C132.240165,105.606625 129.325053,114.086957 129.325053,120.447205 C129.325053,128.132506 132.770187,130.5176 165.631471,134.757766 C198.227744,138.997931 213.598344,145.093169 213.598344,167.884058 C213.333333,191.20497 194.252589,204.455488 160.596274,204.455488 L160.596274,204.455488 Z"
+										fill="#539E43"
+									></path>
+								</g>
+							</g>
+						</svg>
+						<div id="content" class="w-1/2 ml-5">
+							<h3 class="font-semibold font-openSans text-lg">Node.js</h3>
+							<p class="font-montserrat text-sm">Intermediate</p>
+						</div>
+					</div>
+					<div
+						class="flex justify-between items-center mb-8 bg-slate-700 p-10 px-16 py-8 w-1/2 rounded-lg shadow-lg lg:w-3/4 text-center"
+						id="php"
+					>
+						<svg
+							viewBox="0 0 32 32"
+							class="w-10 lg:w-14"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="#000000"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<title>file_type_php3</title>
+								<path
+									d="M7.6,13.791a2.352,2.352,0,0,1,1.745.483,1.916,1.916,0,0,1,.207,1.66,2.78,2.78,0,0,1-.918,1.748,3.375,3.375,0,0,1-2.07.529h-1.4L6.024,13.8ZM2,22.677H4.3l.545-2.8H6.812A7.049,7.049,0,0,0,8.956,19.6a4.06,4.06,0,0,0,1.53-.918A4.585,4.585,0,0,0,11.93,16.1a3.288,3.288,0,0,0-.55-2.922A3.671,3.671,0,0,0,8.47,12.129H4.057Z"
+									style="fill: #8993be"
+								></path>
+								<path
+									d="M13.617,9.323H15.9l-.553,2.8h2.031a3.956,3.956,0,0,1,2.645.669,2.213,2.213,0,0,1,.436,2.167l-.954,4.909H17.195l.908-4.667a1.267,1.267,0,0,0-.114-1.086,1.6,1.6,0,0,0-1.144-.286H15.022l-1.175,6.044H11.559Z"
+									style="fill: #8993be"
+								></path>
+								<path
+									d="M25.539,13.791a2.352,2.352,0,0,1,1.745.483,1.916,1.916,0,0,1,.207,1.66,2.78,2.78,0,0,1-.918,1.748,3.375,3.375,0,0,1-2.074.529H23.1l.858-4.416Zm-5.6,8.886h2.3l.545-2.8h1.968A7.049,7.049,0,0,0,26.9,19.6a4.06,4.06,0,0,0,1.53-.918A4.585,4.585,0,0,0,29.869,16.1a3.288,3.288,0,0,0-.55-2.922,3.671,3.671,0,0,0-2.909-1.046h-4.42Z"
+									style="fill: #8993be"
+								></path>
+							</g>
+						</svg>
+						<div id="content" class="w-1/2">
+							<h3 class="font-semibold font-openSans text-lg">PHP</h3>
+							<p class="font-montserrat text-sm">Intermediate</p>
+						</div>
+					</div>
+					<div
+						class="flex justify-between items-center mb-8 bg-slate-700 p-10 px-16 py-8 w-1/2 rounded-lg shadow-lg lg:w-3/4 text-center"
+						id="laravel"
+					>
+						<svg
+							viewBox="-4 0 264 264"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							preserveAspectRatio="xMidYMid"
+							class="w-10 lg:w-14"
+							fill="#000000"
+						>
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g
+								id="SVGRepo_tracerCarrier"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							></g>
+							<g id="SVGRepo_iconCarrier">
+								<g>
+									<path
+										d="M255.855641,59.619717 C255.950565,59.9710596 256,60.3333149 256,60.6972536 L256,117.265345 C256,118.743206 255.209409,120.108149 253.927418,120.843385 L206.448786,148.178786 L206.448786,202.359798 C206.448786,203.834322 205.665123,205.195421 204.386515,205.937838 L105.27893,262.990563 C105.05208,263.119455 104.804608,263.201946 104.557135,263.289593 C104.464333,263.320527 104.376687,263.377239 104.278729,263.403017 C103.585929,263.58546 102.857701,263.58546 102.164901,263.403017 C102.051476,263.372083 101.948363,263.310215 101.840093,263.26897 C101.613244,263.186479 101.376082,263.1143 101.159544,262.990563 L2.07258227,205.937838 C0.7913718,205.201819 0,203.837372 0,202.359798 L0,32.6555248 C0,32.2843161 0.0515567729,31.9234187 0.144358964,31.5728326 C0.175293028,31.454252 0.24747251,31.3459828 0.288717928,31.2274022 C0.366053087,31.0108638 0.438232569,30.7891697 0.55165747,30.5880982 C0.628992629,30.4540506 0.742417529,30.3457814 0.83521972,30.2220451 C0.953800298,30.0570635 1.06206952,29.8869261 1.20127281,29.7425672 C1.31985339,29.6239866 1.4745237,29.5363401 1.60857131,29.4332265 C1.75808595,29.3094903 1.89213356,29.1754427 2.06227091,29.0774848 L2.06742659,29.0774848 L51.6134853,0.551122364 C52.8901903,-0.183535768 54.4613221,-0.183535768 55.7380271,0.551122364 L105.284086,29.0774848 L105.294397,29.0774848 C105.459379,29.1805983 105.598582,29.3094903 105.748097,29.4280708 C105.882144,29.5311844 106.031659,29.6239866 106.15024,29.7374115 C106.294599,29.8869261 106.397712,30.0570635 106.521448,30.2220451 C106.609095,30.3457814 106.727676,30.4540506 106.799855,30.5880982 C106.918436,30.7943253 106.985459,31.0108638 107.06795,31.2274022 C107.109196,31.3459828 107.181375,31.454252 107.212309,31.5779883 C107.307234,31.9293308 107.355765,32.2915861 107.356668,32.6555248 L107.356668,138.651094 L148.643332,114.878266 L148.643332,60.6920979 C148.643332,60.3312005 148.694889,59.9651474 148.787691,59.619717 C148.823781,59.4959808 148.890804,59.3877116 148.93205,59.269131 C149.014541,59.0525925 149.08672,58.8308984 149.200145,58.629827 C149.27748,58.4957794 149.390905,58.3875102 149.478552,58.2637739 C149.602288,58.0987922 149.705401,57.9286549 149.84976,57.7842959 C149.968341,57.6657153 150.117856,57.5780688 150.251903,57.4749553 C150.406573,57.351219 150.540621,57.2171714 150.705603,57.1192136 L150.710758,57.1192136 L200.261973,28.5928511 C201.538395,27.8571345 203.110093,27.8571345 204.386515,28.5928511 L253.932573,57.1192136 C254.107866,57.2223271 254.241914,57.351219 254.396584,57.4697996 C254.525476,57.5729132 254.674991,57.6657153 254.793572,57.7791402 C254.93793,57.9286549 255.041044,58.0987922 255.16478,58.2637739 C255.257582,58.3875102 255.371007,58.4957794 255.443187,58.629827 C255.561767,58.8308984 255.628791,59.0525925 255.711282,59.269131 C255.757683,59.3877116 255.824707,59.4959808 255.855641,59.619717 Z M247.740605,114.878266 L247.740605,67.8378666 L230.402062,77.8192579 L206.448786,91.6106946 L206.448786,138.651094 L247.745761,114.878266 L247.740605,114.878266 Z M198.194546,199.97272 L198.194546,152.901386 L174.633101,166.357704 L107.351512,204.757188 L107.351512,252.27191 L198.194546,199.97272 Z M8.25939501,39.7961379 L8.25939501,199.97272 L99.0921175,252.266755 L99.0921175,204.762344 L51.6392637,177.906421 L51.6237967,177.89611 L51.603174,177.885798 C51.443348,177.792996 51.3093004,177.658949 51.1597857,177.545524 C51.0308938,177.44241 50.8813791,177.359919 50.7679542,177.246494 L50.7576429,177.231027 C50.6235953,177.102135 50.5307931,176.942309 50.4173682,176.79795 C50.3142546,176.658747 50.1905184,176.540167 50.1080276,176.395808 L50.1028719,176.380341 C50.0100697,176.22567 49.9533572,176.040066 49.8863334,175.864773 C49.8193096,175.710103 49.7316631,175.565744 49.6904177,175.400762 L49.6904177,175.395606 C49.6388609,175.19969 49.6285496,174.993463 49.6079269,174.792392 C49.5873041,174.637722 49.5460587,174.483051 49.5460587,174.328381 L49.5460587,174.31807 L49.5460587,63.5689658 L25.5979377,49.7723734 L8.25939501,39.8012935 L8.25939501,39.7961379 Z M53.6809119,8.89300821 L12.3994039,32.6555248 L53.6706006,56.4180414 L94.9469529,32.6503692 L53.6706006,8.89300821 L53.6809119,8.89300821 Z M75.1491521,157.19091 L99.0972731,143.404629 L99.0972731,39.7961379 L81.7587304,49.7775291 L57.8054537,63.5689658 L57.8054537,167.177457 L75.1491521,157.19091 Z M202.324244,36.934737 L161.047891,60.6972536 L202.324244,84.4597702 L243.59544,60.6920979 L202.324244,36.934737 Z M198.194546,91.6106946 L174.24127,77.8192579 L156.902727,67.8378666 L156.902727,114.878266 L180.850848,128.664547 L198.194546,138.651094 L198.194546,91.6106946 Z M103.216659,197.616575 L163.759778,163.052915 L194.023603,145.781396 L152.778185,122.034346 L105.289242,149.374903 L62.0073307,174.292291 L103.216659,197.616575 Z"
+										fill="#FF2D20"
+									></path>
+								</g>
+							</g>
+						</svg>
+						<div id="content" class="w-1/2 ml-4">
+							<h3 class="font-semibold font-openSans text-lg">Laravel</h3>
+							<p class="font-montserrat text-sm">Intermediate</p>
+						</div>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+			<section class="text-center mt-36 mb-16" id="contact">
+				<h1 class="font-bold text-3xl lg:text-5xl">Contact Me</h1>
+				<form action="" method="post" class="w-3/4 mx-auto">
+					<label for="name" class="font-semibold lg:text-2xl lg:mt-5 lg:block"
+						>Name</label
+					>
+					<input
+						type="text"
+						name="name"
+						id="name"
+						placeholder="Your name..."
+						class="w-full my-3 bg-slate-700 text-slate-100 px-2 py-1 ring ring-slate-600 rounded-lg placeholder:text-slate-200 focus:outline-none focus:ring focus:ring-slate-500 lg:w-1/2 lg:h-12"
+					/>
+					<label for="email" class="font-semibold lg:text-2xl lg:mt-5 lg:block"
+						>Email</label
+					>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Your email..
+				"
+						class="w-full my-3 bg-slate-700 text-slate-100 px-2 py-1 ring ring-slate-600 rounded-lg placeholder:text-slate-200 focus:outline-none focus:ring focus:ring-slate-500 lg:w-1/2 lg:h-12"
+					/>
+					<label
+						for="message"
+						class="font-semibold lg:text-2xl lg:mt-5 lg:block"
+						>Message</label
+					>
+					<input
+						type="text"
+						name="message"
+						id="message"
+						placeholder="Your message to me..."
+						class="w-full h-32 my-3 bg-slate-700 text-slate-100 px-2 py-1 ring ring-slate-600 rounded-lg placeholder:text-slate-200 focus:outline-none focus:ring focus:ring-slate-500 lg:w-1/2"
+					/>
+					<br />
+					<button
+						type="submit"
+						class="w-36 mt-5 bg-slate-300 text-slate-800 px-10 py-3 rounded-full hover:bg-slate-700 hover:text-slate-200 shadow-lg"
+					>
+						Send
+					</button>
+				</form>
+			</section>
+		</main>
+		<footer
+			class="w-full h-14 flex justify-center items-center bg-slate-700 lg:h-28"
+		>
+			<p>Copyright Primananda Andhika 2023 ©</p>
+		</footer>
 		<script src="js/script.js"></script>
 	</body>
 </html>
