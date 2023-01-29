@@ -4,12 +4,21 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      keyframes: {
+        typing: {
+          'from': {width: '0'},
+          'to': {width: '100%'},
+        },
+      },
+      animation: {
+        'typewriter': 'typing 1s steps(20, end) forwads'
+      },
       fontFamily: {
-        inter: ["Inter"],
-        viraCode: ["Vira Code"],
-        hack: ["Hack"],
-        openSans: ["Open Sans"],
-        montserrat: ["Montserrat"]
+        // inter: ["Inter"],
+        // viraCode: ["Vira Code"],
+        // hack: ["Hack"],
+        // openSans: ["Open Sans"],
+        // montserrat: ["Montserrat"]
       }
     },
   },
