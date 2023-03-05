@@ -5,10 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Primananda Andhika</title>
+		<link rel="icon" href="img/favicon.png" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="preload" as="image" href="img/programmer.avif" />
 	</head>
-	<body class="font-inter dark:bg-slate-800 dark:text-slate-300">
+	<body class="font-inter dark:bg-slate-800 dark:text-slate-300" id="home">
 		<header
 			class="flex justify-between items-center absolute top-0 left-0 right-0 w-full p-5 opacity-90 dark:bg-slate-700 lg:h-[13vh]"
 			id="header"
@@ -43,10 +44,10 @@
 				</ul>
 			</nav>
 		</header>
+		<div id="home" class="h-1"></div>
 		<main class="container text-center mx-auto lg:mx-0">
 			<section
 				class="flex justify-center items-center text-center flex-col mt-28 lg:mt-40 lg:flex-row-reverse lg:h-[60vh]"
-				id="home"
 			>
 				<img
 					src="img/programmer.avif"
@@ -107,10 +108,15 @@
 						id="job"
 					></span>
 					<p
-						class="w-1/2 mb-3 text-base text-center font-montserrat sm:text-lg lg:text-xl"
+						class="w-1/2 mb-3 font-semibold text-base text-center font-montserrat sm:text-lg lg:text-xl"
 					>
-						A Junior Web Developer who Wants to be a Better Person Everyday with
-						Learn Anything that I Like to do
+						A Junior
+						<span
+							class="bg-gradient-to-r from-sky-500 via-blue-500 to-purple-500 bg-clip-text text-transparent"
+							>Web Developer</span
+						>
+						who Wants to be a Better Person Everyday with Learn Anything that I
+						Like to dot
 					</p>
 					<p
 						class="w-1/2 text-center text-sm italic underline capitalize font-semibold font-openSans sm:text-base lg:text-lg"
@@ -119,7 +125,8 @@
 					</p>
 				</div>
 			</section>
-			<section class="mt-36 text-center" id="about">
+			<div id="about" class="h-1"></div>
+			<section class="mt-60 text-center">
 				<h1 class="text-3xl font-bold sm:text-4xl lg:text-5xl">About Me</h1>
 				<div
 					class="flex items-center flex-col font-montserrat lg:flex-row lg:w-3/4 lg:mx-auto lg:justify-around"
@@ -137,9 +144,9 @@
 					</p>
 				</div>
 			</section>
+			<div id="skills" class="h-1"></div>
 			<section
-				class="text-center mt-36 flex flex-col justify-center items-center content-center"
-				id="skills"
+				class="text-center mt-60 flex flex-col justify-center items-center content-center"
 			>
 				<h1 class="font-bold text-3xl sm:text-4xl lg:text-5xl lg:mb-10">
 					My Programming Skills
@@ -548,7 +555,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="text-center mt-36 mb-16" id="contact">
+			<div id="contact" class="h-1"></div>
+			<section class="text-center mt-60 mb-16">
 				<h1 class="font-bold text-3xl sm:text-4xl lg:text-5xl">Contact Me</h1>
 				<form action="" method="post" class="w-3/4 mx-auto">
 					<label
