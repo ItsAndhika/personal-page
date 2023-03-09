@@ -36,7 +36,7 @@
         @apply my-4
     }
     #nav ul li a:hover {
-        @apply border-b border-b-slate-100 pb-2
+        @apply border-b pb-2 duration-300 border-b-slate-700 lg:border-b-slate-100
     }
     #job {
         position: relative;
@@ -48,7 +48,8 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: rgb(30 41 59);
+        background-color: rgb(15 23 42);
+        /* rgb(30 41 59); */
         border-left: 4px solid rgb(100 116 139);
         animation: typing 4s steps(12) infinite;
     }
