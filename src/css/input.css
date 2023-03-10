@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .navbar {
-    @apply fixed z-[9999] bg-white bg-opacity-80;
+    @apply fixed z-[9999] bg-white bg-opacity-80 border-b border-b-slate-300 duration-300 backdrop-blur-lg lg:border-none;
     -webkit-backdrop-filter: blur(5px);
     box-shadow: inset 0 -1px 0 0 0;
 }
@@ -20,6 +20,40 @@
     src: url("fonts/Montserrat-Regular.ttf");
 }
 @layer base {
+    .checkbox {
+            opacity: 0;
+            position: absolute;
+        }
+    
+        .label {
+            width: 30px;
+            height: 16px;
+            /* background-color: #111; */
+            display: flex;
+            border-radius: 50px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            transform: scale(1.5);
+            @apply bg-black dark:bg-slate-100
+        }
+    
+        .ball {
+            width: 10px;
+            height: 10px;
+            /* background-color: white; */
+            position: absolute;
+            top: 3px;
+            left: 2px;
+            border-radius: 50%;
+            transition: transform 0.2s linear;
+            @apply bg-white dark:bg-slate-900
+        }
+
+        .checkbox:checked+.label .ball {
+            transform: translateX(15px);
+        }
     .font-inter {
         font-family: "Inter";
     }
@@ -33,10 +67,11 @@
         @apply transition-all duration-300
     }
     #nav ul li {
-        @apply my-4
+        @apply my-4 text-slate-900 lg:dark:text-slate-100
     }
     #nav ul li a:hover {
-        @apply border-b pb-2 duration-300 border-b-slate-700 lg:border-b-slate-100
+        /* @apply border-b pb-2 duration-300 border-b-slate-700 lg:border-b-slate-100 */
+        @apply text-blue-600 border-b border-blue-600 dark:border-b dark:border-sky-500 dark:text-sky-500 pb-2 duration-300
     }
     #job {
         position: relative;
@@ -48,10 +83,11 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: rgb(15 23 42);
+        /* background-color: rgb(15 23 42); */
         /* rgb(30 41 59); */
         border-left: 4px solid rgb(100 116 139);
         animation: typing 4s steps(12) infinite;
+        @apply bg-white dark:bg-slate-900
     }
     @keyframes typing {
         40%, 60% {

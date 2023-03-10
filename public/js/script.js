@@ -9,11 +9,18 @@ window.onscroll = function() {
     }
 }
 
+const checkbox = document.getElementById('checkbox')
+const html = document.getElementById('html-tag')
+checkbox.addEventListener('click', function() {
+    html.classList.toggle('dark')
+})
+
 const menu = document.getElementById('menu')
 const nav = document.getElementById('nav')
 menu.addEventListener('click', function() {
     nav.classList.toggle('hidden')
 })
+
 
 const text = document.getElementById('job')
 const textLoad = () => {
