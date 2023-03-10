@@ -101,6 +101,29 @@
         from, to {border-color: transparent}
         50% {border-color: rgb(100, 116, 139)}
     }
+    #menu span {
+        @apply transition-all duration-500
+    }
+
+    #menu span:first-child {
+        @apply origin-top-left
+    }
+
+    #menu span:last-child {
+        @apply origin-top-left
+    }
+
+    .firstSpan {
+        @apply translate-x-[1px] -translate-y-[2px] rotate-45
+    }
+
+    .secondSpan {
+        @apply scale-0
+    }
+
+    .lastSpan {
+        @apply -translate-x-[1px] translate-y-[0px] -rotate-45
+    }
 }
 
 @layer components {

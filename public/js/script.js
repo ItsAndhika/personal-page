@@ -19,6 +19,9 @@ const menu = document.getElementById('menu')
 const nav = document.getElementById('nav')
 menu.addEventListener('click', function() {
     nav.classList.toggle('hidden')
+    menu.firstElementChild.classList.toggle('firstSpan')
+    menu.firstElementChild.nextElementSibling.classList.toggle('secondSpan')
+    menu.lastElementChild.classList.toggle('lastSpan')
 })
 
 
