@@ -67,7 +67,7 @@
         @apply transition-all duration-300
     }
     #nav ul li {
-        @apply my-4 text-slate-900 lg:dark:text-slate-100
+        @apply my-4 text-slate-900 mb-1 lg:dark:text-slate-100
     }
     #nav ul li a:hover {
         /* @apply border-b pb-2 duration-300 border-b-slate-700 lg:border-b-slate-100 */
