@@ -781,6 +781,10 @@ header {
   top: 2.75rem;
 }
 
+.top-10 {
+  top: 2.5rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1126,6 +1130,10 @@ header {
 
 .fill-slate-900 {
   fill: #0f172a;
+}
+
+.fill-black {
+  fill: #000;
 }
 
 .p-5 {
