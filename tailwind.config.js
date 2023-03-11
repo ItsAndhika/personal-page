@@ -4,6 +4,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        'primary': '#01051e'
+      },
       keyframes: {
         typing: {
           'from': {width: '0'},

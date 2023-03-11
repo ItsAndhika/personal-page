@@ -9,10 +9,12 @@ window.onscroll = function() {
     }
 }
 
-const checkbox = document.getElementById('checkbox')
+const theme = document.querySelectorAll('#theme')
 const html = document.getElementById('html-tag')
-checkbox.addEventListener('click', function() {
-    html.classList.toggle('dark')
+theme.forEach(t => {
+    t.addEventListener('click', function() {
+        html.classList.toggle('dark')
+    })
 })
 
 const menu = document.getElementById('menu')

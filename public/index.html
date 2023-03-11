@@ -7,11 +7,13 @@
 		<title>Primananda Andhika</title>
 		<link rel="icon" href="img/favicon.png" />
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="preload" as="image" href="img/programmer.avif" />
+		<link rel="preload" as="image" href="img/programmer.png" />
 	</head>
-	<body class="font-inter bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-300 dark:selection:bg-slate-300 dark:selection:text-slate-900 id="home">
+	<body class="font-inter bg-white text-slate-900 dark:bg-primary dark:text-slate-300 dark:selection:bg-slate-300 dark:selection:text-slate-900 id="home">
+		<div id="circle" class="w-80 h-80 bg-purple-700 rounded-full absolute top-20 blur-3xl -z-10 opacity-30 lg:top-40 lg:-left-24"></div>
+		<div id="circle" class="dark:block w-80 h-80 bg-blue-600 rounded-full absolute top-[550px] right-0 blur-3xl -z-40 opacity-30 lg:top-96"></div>
 		<header
-			class="flex justify-between items-center absolute top-0 left-0 right-0 w-full p-5 opacity-90 bg-white dark:bg-slate-800 lg:h-[13vh] dark:border-none"
+			class="flex justify-between items-center absolute top-0 left-0 right-0 w-full p-5 opacity-90 bg-white dark:bg-primary lg:h-[13vh]"
 			id="header"
 		>
 			<a
@@ -31,7 +33,7 @@
 				<rect y="30" width="100" height="10"></rect>
 				<rect y="60" width="100" height="10"></rect>
 			</svg> -->
-			<div id="menu" class="w-7 h-7 cursor-pointer flex flex-col justify-evenly">
+			<div id="menu" class="w-7 h-7 cursor-pointer flex flex-col justify-evenly lg:hidden">
 				<span class="block w-6 h-0.5 bg-slate-900 dark:bg-slate-100"></span>
 				<span class="block w-6 h-0.5 bg-slate-900 dark:bg-slate-100"></span>
 				<span class="block w-6 h-0.5 bg-slate-900 dark:bg-slate-100"></span>
@@ -40,19 +42,15 @@
 				class="hidden absolute right-14 top-11 rounded-lg bg-slate-100 text-slate-900 border border-slate-400 dark:bg-slate-300 dark:text-slate-900 dark:border-none px-16 py-8 bg-opacity-80 lg:block lg:bg-transparent lg:static lg:text-slate-200 lg:p-0 lg:m-0 lg:nav-lg lg:border-none"
 				id="nav"
 			>
-				<ul class="text-slate-900 flex items-center flex-col lg:flex lg:flex-row lg:justify-evenly lg:items-center lg:bg-white lg:dark:bg-slate-800">
+				<ul class="text-slate-900 flex items-center flex-col lg:flex lg:flex-row lg:justify-evenly lg:items-center lg:bg-white lg:dark:bg-primary">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#skills">Skills</a></li>
 					<!-- <li><a href="#projects">Projects</a></li> -->
 					<li><a href="#contact">Contact</a></li>
 					<li>
-						<div>
-						    <input type="checkbox" class="checkbox" id="checkbox">
-						  	<label for="checkbox" class="label">
-						    <div class='ball'>
-						  </label>
-						</div>
+						<svg fill="#000000" id="theme" class="light-theme hidden w-8 mr-2 cursor-pointer dark:block dark:fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M12,18a6,6,0,1,0-6-6A6.006,6.006,0,0,0,12,18ZM12,8a4,4,0,1,1-4,4A4,4,0,0,1,12,8ZM11,3V2a1,1,0,0,1,2,0V3a1,1,0,0,1-2,0Zm1,17a1,1,0,0,1,1,1v1a1,1,0,0,1-2,0V21A1,1,0,0,1,12,20ZM17.657,6.343a1,1,0,0,1,0-1.414l.707-.707a1,1,0,0,1,1.414,1.414l-.707.707a1,1,0,0,1-1.414,0ZM6.343,17.657a1,1,0,0,1,0,1.414l-.707.707a1,1,0,0,1-1.414-1.414l.707-.707A1,1,0,0,1,6.343,17.657ZM23,12a1,1,0,0,1-1,1H21a1,1,0,0,1,0-2h1A1,1,0,0,1,23,12ZM1,12a1,1,0,0,1,1-1H3a1,1,0,0,1,0,2H2A1,1,0,0,1,1,12Zm18.071,5.657.707.707a1,1,0,1,1-1.414,1.414l-.707-.707a1,1,0,0,1,1.414-1.414ZM4.222,5.636A1,1,0,0,1,5.636,4.222l.707.707A1,1,0,1,1,4.929,6.343Z"></path></g></svg>
+						<svg viewBox="0 0 32 32" id="theme" class="w-8 mr-2 cursor-pointer dark:hidden dark:fill-white" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Lager_94" data-name="Lager 94" transform="translate(0)"> <path id="Path_70" data-name="Path 70" d="M12.516,4.509A12,12,0,0,0,22.3,19.881,12.317,12.317,0,0,0,24,20a11.984,11.984,0,0,0,3.49-.514,12.1,12.1,0,0,1-9.963,8.421A12.679,12.679,0,0,1,16,28,12,12,0,0,1,12.516,4.509M16,0a16.5,16.5,0,0,0-2.212.15A16,16,0,0,0,16,32a16.526,16.526,0,0,0,2.01-.123A16.04,16.04,0,0,0,31.85,18.212,16.516,16.516,0,0,0,32,15.944,1.957,1.957,0,0,0,30,14a2.046,2.046,0,0,0-1.23.413A7.942,7.942,0,0,1,24,16a8.35,8.35,0,0,1-1.15-.08,7.995,7.995,0,0,1-5.264-12.7A2.064,2.064,0,0,0,16.056,0Z" fill="#040505"></path> </g> </g></svg>
 					</li>
 				</ul>
 			</nav>
@@ -63,9 +61,9 @@
 				class="flex justify-center items-center text-center flex-col mt-28 lg:mt-40 lg:flex-row-reverse lg:h-[60vh]"
 			>
 				<img
-					src="img/programmer.avif"
+					src="img/programmer.png"
 					alt="Programmer"
-					class="w-1/2 text-center rounded-full lg:w-1/2"
+					class="w-1/2 text-center rounded-full lg:w-[500px]"
 				/>
 				<div class="flex justify-center items-center flex-col w-full">
 					<nav class="w-40 flex justify-center items-center">
@@ -125,7 +123,7 @@
 					>
 						A Junior
 						<span
-							class="bg-gradient-to-r from-sky-500 via-blue-500 to-purple-500 bg-clip-text text-transparent"
+							class="bg-gradient-to-r from-sky-500 via-blue-500 to-purple-500 bg-clip-text text-transparent -z-20"
 							>Web Developer</span
 						>
 						who Wants to be a Better Person Everyday by Learn Anything that I
@@ -142,6 +140,7 @@
 			<div id="about" class="h-1"></div>
 			<section class="mt-60 text-center">
 				<h1 class="text-3xl font-bold sm:text-4xl lg:text-5xl">About Me</h1>
+				<div id="circle" class="w-80 h-80 ml-20 bg-purple-700 rounded-full absolute blur-3xl -z-10 opacity-30 lg:ml-[480px]"></div>
 				<div
 					class="flex items-center flex-col font-montserrat lg:flex-row lg:w-3/4 lg:mx-auto lg:justify-around"
 				>
@@ -162,15 +161,17 @@
 			<section
 				class="text-center mt-60 flex flex-col justify-center items-center content-center"
 			>
-				<h1 class="font-bold text-3xl sm:text-4xl lg:text-5xl lg:mb-10">
-					My Programming Skills
-				</h1>
+			<h1 class="font-bold text-3xl sm:text-4xl lg:text-5xl lg:mb-10">
+				My Programming Skills
+			</h1>
+			<div id="circle" class="w-80 h-80 bg-purple-700 rounded-full -z-10 opacity-30 absolute blur-3xl self-center mb-[1100px] lg:mb-0 lg:mr-80"></div>
+			<div id="circle" class="dark:block w-80 h-80 bg-blue-600 rounded-full -z-40 opacity-30 absolute blur-3xl self-center mt-[1100px] lg:mt-0 lg:ml-80"></div>
 				<div
 					class="w-full mx-auto flex flex-col justify-center items-center sm:grid sm:grid-cols-2 sm:mx-auto sm:text-center sm:ml-[50px] sm:w-11/12 lg:grid lg:grid-cols-3 lg:grid-rows-3 lg:mx-auto lg:text-center lg:w-full lg:ml-[60px] lg:overflow-hidden"
 					id="cards"
 				>
 					<div
-						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4 dark:bg-slate-800"
+						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4 dark:bg-slate-900"
 						id="html"
 					>
 						<svg
@@ -214,7 +215,7 @@
 						</div>
 					</div>
 					<div
-						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-800 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
+						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-900 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
 						id="css"
 					>
 						<svg
@@ -244,7 +245,7 @@
 						</div>
 					</div>
 					<div
-						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-800 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
+						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-900 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
 						id="javascript"
 					>
 						<svg
@@ -285,7 +286,7 @@
 						</div>
 					</div>
 					<div
-						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-800 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
+						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-900 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
 						id="bootstrap"
 					>
 						<svg
@@ -322,7 +323,7 @@
 						</div>
 					</div>
 					<div
-						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-800 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
+						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-900 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
 						id="tailwind"
 					>
 						<svg
@@ -351,7 +352,7 @@
 						</div>
 					</div>
 					<div
-						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-800 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
+						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-900 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
 						id="reactjs"
 					>
 						<svg
@@ -465,7 +466,7 @@
 						</div>
 					</div>
 					<div
-						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-800 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
+						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-900 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
 						id="nodejs"
 					>
 						<svg
@@ -498,7 +499,7 @@
 						</div>
 					</div>
 					<div
-						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-800 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
+						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-900 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
 						id="php"
 					>
 						<svg
@@ -535,7 +536,7 @@
 						</div>
 					</div>
 					<div
-						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-800 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
+						class="flex justify-between items-center content-center mt-4 mb-8 text-center bg-slate-50 dark:bg-slate-900 p-10 px-16 py-8 w-4/5 rounded-lg shadow-lg sm:w-11/12 lg:w-3/4"
 						id="laravel"
 					>
 						<svg
@@ -583,7 +584,7 @@
 						name="name"
 						id="name"
 						placeholder="Your name..."
-						class="w-full my-3 bg-slate-50 text-slate-900 dark:bg-slate-800 dark:text-slate-100 px-2 py-1 ring
+						class="w-full my-3 bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 px-2 py-1 ring
 						ring-slate-300 dark:ring-slate-700 rounded-lg placeholder:text-slate-900 placeholder:dark:text-slate-200 focus:outline-none focus:ring focus:ring-sky-400 focus:dark:ring-sky-400 lg:w-1/2 lg:h-12"
 					/>
 					<label
@@ -597,7 +598,7 @@
 						id="email"
 						placeholder="Your email..
 				"
-						class="w-full my-3 bg-slate-50 text-slate-900 dark:bg-slate-800 dark:text-slate-100 px-2 py-1 ring
+						class="w-full my-3 bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 px-2 py-1 ring
 						ring-slate-300 dark:ring-slate-700 rounded-lg placeholder:text-slate-900 placeholder:dark:text-slate-200 focus:outline-none focus:ring focus:ring-sky-300 focus:dark:ring-sky-400 lg:w-1/2 lg:h-12"
 					/>
 					<label
@@ -610,13 +611,13 @@
 						name="message"
 						id="message"
 						placeholder="Your message to me..."
-						class="w-full h-32 my-3 bg-slate-50 text-slate-900 dark:bg-slate-800 dark:text-slate-100 px-2 py-1 ring
+						class="w-full h-32 my-3 bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 px-2 py-1 ring
 						ring-slate-300 dark:ring-slate-700 rounded-lg placeholder:text-slate-900 placeholder:dark:text-slate-200 focus:outline-none focus:ring focus:ring-sky-300 focus:dark:ring-sky-400 lg:w-1/2"
 					/>
 					<br />
 					<a
 						href="#"
-						class="inline-block bg-slate-900 text-slate-100 w-36 mt-5 dark:bg-slate-300 dark:text-slate-800 px-10 py-3 rounded-full hover:bg-slate-200 hover:text-slate-900 hover:dark:bg-slate-700 hover:dark:text-slate-200 shadow-lg"
+						class="inline-block bg-slate-900 text-slate-100 w-36 mt-5 dark:bg-slate-300 dark:text-slate-900 px-10 py-3 rounded-full hover:bg-slate-200 hover:text-slate-900 hover:dark:bg-slate-700 hover:dark:text-slate-200 shadow-lg"
 					>
 						Send
 					</a>
@@ -624,7 +625,7 @@
 			</section>
 		</main>
 		<footer
-			class="w-full h-14 text-xs flex justify-center items-center border-t border-t-slate-300 dark:bg-slate-800 sm:h-20 lg:h-28 lg:text-base lg:border-none dark:border-none"
+			class="w-full h-14 text-xs flex justify-center items-center border-t border-t-slate-300 dark:bg-slate-900 sm:h-20 lg:h-28 lg:text-base lg:border-none dark:border-none"
 		>
 			<p>© Copyright 2023 Primananda Andhika. All right reserved</p>
 		</footer>
