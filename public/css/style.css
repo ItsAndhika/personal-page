@@ -881,6 +881,22 @@ header {
   margin-bottom: 4rem;
 }
 
+.ml-12 {
+  margin-left: 3rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.-ml-10 {
+  margin-left: -2.5rem;
+}
+
+.-ml-80 {
+  margin-left: -20rem;
+}
+
 .block {
   display: block;
 }
@@ -995,6 +1011,10 @@ header {
 
 .flex-col {
   flex-direction: column;
+}
+
+.place-content-center {
+  place-content: center;
 }
 
 .content-center {
