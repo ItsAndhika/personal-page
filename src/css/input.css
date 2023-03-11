@@ -30,7 +30,7 @@
         font-family: "montserrat";
     }
     header {
-        @apply transition-all duration-300 overflow-hidden
+        @apply transition-all duration-300 
     }
     #nav ul li {
         @apply my-4 text-slate-900 mb-1 lg:dark:text-slate-100
