@@ -753,8 +753,8 @@ header {
   position: absolute;
 }
 
-.top-20 {
-  top: 5rem;
+.top-10 {
+  top: 2.5rem;
 }
 
 .top-\[550px\] {
@@ -779,10 +779,6 @@ header {
 
 .top-11 {
   top: 2.75rem;
-}
-
-.top-10 {
-  top: 2.5rem;
 }
 
 .-z-10 {
