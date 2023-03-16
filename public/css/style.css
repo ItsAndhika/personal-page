@@ -813,8 +813,8 @@ header {
   margin-right: 0.5rem;
 }
 
-.mt-28 {
-  margin-top: 7rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .mt-3 {
@@ -823,10 +823,6 @@ header {
 
 .mb-3 {
   margin-bottom: 0.75rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .mt-60 {
@@ -871,14 +867,6 @@ header {
 
 .mb-16 {
   margin-bottom: 4rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .block {
@@ -1054,9 +1042,9 @@ header {
   border-color: rgb(148 163 184 / var(--tw-border-opacity));
 }
 
-.border-t-slate-300 {
+.border-t-slate-600 {
   --tw-border-opacity: 1;
-  border-top-color: rgb(203 213 225 / var(--tw-border-opacity));
+  border-top-color: rgb(71 85 105 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -1323,19 +1311,19 @@ header {
 @font-face {
   font-family: "Inter";
 
-  src: url("fonts/Inter-Regular.ttf");
+  src: url("../../../../../../fonts/Inter-Regular.ttf");
 }
 
 @font-face {
   font-family: "openSans";
 
-  src: url("fonts/OpenSans-Regular.ttf");
+  src: url("../../../../../../fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
   font-family: "montserrat";
 
-  src: url("fonts/Montserrat-Regular.ttf");
+  src: url("../../../../../../fonts/Montserrat-Regular.ttf");
 }
 
 .placeholder\:text-slate-900::-moz-placeholder {
@@ -1406,11 +1394,6 @@ header {
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
 .dark .dark\:bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -1419,6 +1402,11 @@ header {
 .dark .dark\:bg-slate-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:fill-white {
@@ -1610,8 +1598,8 @@ header {
     margin-right: auto;
   }
 
-  .lg\:mt-40 {
-    margin-top: 10rem;
+  .lg\:mt-20 {
+    margin-top: 5rem;
   }
 
   .lg\:mr-10 {
@@ -1648,10 +1636,6 @@ header {
 
   .lg\:mt-5 {
     margin-top: 1.25rem;
-  }
-
-  .lg\:mt-20 {
-    margin-top: 5rem;
   }
 
   .lg\:block {
@@ -1750,11 +1734,6 @@ header {
     background-color: transparent;
   }
 
-  .lg\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
-
   .lg\:p-0 {
     padding: 0px;
   }
@@ -1803,13 +1782,82 @@ header {
     line-height: 1.5rem;
   }
 
+  .lg\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
   .lg\:text-slate-200 {
     --tw-text-opacity: 1;
     color: rgb(226 232 240 / var(--tw-text-opacity));
   }
+}
 
-  .dark .lg\:dark\:bg-primary {
-    --tw-bg-opacity: 1;
-    background-color: rgb(1 5 30 / var(--tw-bg-opacity));
+@media (min-width: 1280px) {
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .\32xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .\32xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .\32xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }

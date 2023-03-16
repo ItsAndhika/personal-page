@@ -9,15 +9,15 @@
 }
 @font-face {
     font-family: "Inter";
-    src: url("fonts/Inter-Regular.ttf");
+    src: url("../../../../../../fonts/Inter-Regular.ttf");
 }
 @font-face {
     font-family: "openSans";
-    src: url("fonts/OpenSans-Regular.ttf");
+    src: url("../../../../../../fonts/OpenSans-Regular.ttf");
 }
 @font-face {
     font-family: "montserrat";
-    src: url("fonts/Montserrat-Regular.ttf");
+    src: url("../../../../../../fonts/Montserrat-Regular.ttf");
 }
 @layer base {
     .font-inter {
