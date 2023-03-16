@@ -698,7 +698,13 @@
 					<h1 class="font-bold text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl">
 						Contact Me
 					</h1>
-					<form action="" method="post" class="w-3/4 mx-auto">
+					<div
+						id="alert"
+						class="hidden w-[35vw] h-14 leading-[3.5rem] rounded-lg mx-auto my-4 text-white font-semibold text-2xl border border-slate-600 border-opacity-75 bg-teal-800 dark:border-teal-600"
+					>
+						Your message has sent!
+					</div>
+					<form name="contact-form" class="w-3/4 mx-auto">
 						<label
 							for="name"
 							class="font-semibold sm:text-xl lg:text-2xl lg:mt-5 lg:block 2xl:text-3xl"
@@ -737,12 +743,13 @@
 							class="w-full h-32 my-3 bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 px-2 py-1 ring ring-slate-300 dark:ring-slate-700 rounded-lg placeholder:text-slate-900 placeholder:dark:text-slate-200 focus:outline-none focus:ring focus:ring-sky-300 focus:dark:ring-sky-400 lg:w-1/2"
 						></textarea>
 						<br />
-						<a
-							href="#"
+						<button
+							type="submit"
+							id="send"
 							class="inline-block bg-slate-900 text-slate-100 w-36 mt-5 dark:bg-slate-300 dark:text-slate-900 px-10 py-3 rounded-full hover:bg-slate-200 hover:text-slate-900 hover:dark:bg-slate-700 hover:dark:text-slate-200 shadow-lg"
 						>
 							Send
-						</a>
+						</button>
 					</form>
 				</section>
 			</main>
