@@ -777,6 +777,74 @@ header {
   top: 2.75rem;
 }
 
+.left-10 {
+  left: 2.5rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.top-40 {
+  top: 10rem;
+}
+
+.left-1 {
+  left: 0.25rem;
+}
+
+.-left-10 {
+  left: -2.5rem;
+}
+
+.-right-10 {
+  right: -2.5rem;
+}
+
+.top-80 {
+  top: 20rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.top-\[100vh\] {
+  top: 100vh;
+}
+
+.top-\[60vh\] {
+  top: 60vh;
+}
+
+.top-\[80vh\] {
+  top: 80vh;
+}
+
+.top-\[70vh\] {
+  top: 70vh;
+}
+
+.top-\[65vh\] {
+  top: 65vh;
+}
+
+.top-\[75vh\] {
+  top: 75vh;
+}
+
+.top-\[10vh\] {
+  top: 10vh;
+}
+
+.top-\[5vh\] {
+  top: 5vh;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -985,6 +1053,18 @@ header {
   place-content: center;
 }
 
+.place-content-start {
+  place-content: start;
+}
+
+.place-content-end {
+  place-content: end;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
 .content-center {
   align-content: center;
 }
@@ -1005,12 +1085,28 @@ header {
   justify-content: space-evenly;
 }
 
+.self-start {
+  align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
 .self-center {
   align-self: center;
 }
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .scroll-smooth {
@@ -1584,6 +1680,46 @@ header {
     top: 24rem;
   }
 
+  .lg\:left-10 {
+    left: 2.5rem;
+  }
+
+  .lg\:right-10 {
+    right: 2.5rem;
+  }
+
+  .lg\:top-80 {
+    top: 20rem;
+  }
+
+  .lg\:top-\[10vh\] {
+    top: 10vh;
+  }
+
+  .lg\:top-\[80vh\] {
+    top: 80vh;
+  }
+
+  .lg\:top-\[60vh\] {
+    top: 60vh;
+  }
+
+  .lg\:top-\[40vh\] {
+    top: 40vh;
+  }
+
+  .lg\:top-\[50vh\] {
+    top: 50vh;
+  }
+
+  .lg\:top-\[45vh\] {
+    top: 45vh;
+  }
+
+  .lg\:-left-10 {
+    left: -2.5rem;
+  }
+
   .lg\:m-0 {
     margin: 0px;
   }
@@ -1782,51 +1918,9 @@ header {
     line-height: 1.5rem;
   }
 
-  .lg\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
   .lg\:text-slate-200 {
     --tw-text-opacity: 1;
     color: rgb(226 232 240 / var(--tw-text-opacity));
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .xl\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .xl\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .xl\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .xl\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .xl\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 }
 
